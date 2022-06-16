@@ -6,8 +6,8 @@ public class Entrenador extends Futbolista{
     private String paradoTactico;
     private int titulosGanados;
 
-    public Entrenador(String paradoTactico, int titulosGanados, String pieDominante, int golesMarcados, String nombre, String apellido, int edad) {
-        super(pieDominante, golesMarcados, nombre, apellido, edad);
+    public Entrenador(String paradoTactico, int titulosGanados, String pieDominante, int golesMarcados, String nombre, String apellido, int edad, String reino) {
+        super(pieDominante, golesMarcados, nombre, apellido, edad, reino);
         this.paradoTactico = paradoTactico;
         this.titulosGanados = titulosGanados;
     }

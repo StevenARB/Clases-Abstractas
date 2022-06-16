@@ -6,8 +6,8 @@ public class Arquitecto extends Carpintero {
     private String especialidad;
     private int salario;
 
-    public Arquitecto(String especialidad, int salario, String experiencia, int casasConstruidas, String nombre, String apellido, int edad) {
-        super(experiencia, casasConstruidas, nombre, apellido, edad);
+    public Arquitecto(String especialidad, int salario, String experiencia, int casasConstruidas, String nombre, String apellido, int edad, String reino) {
+        super(experiencia, casasConstruidas, nombre, apellido, edad, reino);
         this.especialidad = especialidad;
         this.salario = salario;
     }

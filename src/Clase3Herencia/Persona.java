@@ -1,13 +1,14 @@
 package Clase3Herencia;
 
 
-public class Persona {
+public abstract class Persona extends SerVivo {
     
     private String nombre;
     private String apellido;
     private int edad;
 
-    public Persona(String nombre, String apellido, int edad) {
+    public Persona(String nombre, String apellido, int edad, String reino) {
+        super(reino);
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -25,10 +26,6 @@ public class Persona {
         return edad;
     }
     
-    public void mostrarDatosPersona() {
-        System.out.println("\nPersona"
-                +"\nNombre: "+nombre+" "+apellido
-                +"\nEdad: "+edad);
-    }
+    public abstract void mostrarDatosPersona();
 }
 

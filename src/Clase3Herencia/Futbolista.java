@@ -6,8 +6,8 @@ public class Futbolista extends Persona {
     private String pieDominante;
     private int golesMarcados;
 
-    public Futbolista(String pieDominante, int golesMarcados, String nombre, String apellido, int edad) {
-        super(nombre, apellido, edad);
+    public Futbolista(String pieDominante, int golesMarcados, String nombre, String apellido, int edad, String reino) {
+        super(nombre, apellido, edad, reino);
         this.pieDominante = pieDominante;
         this.golesMarcados = golesMarcados;
     }
@@ -18,6 +18,11 @@ public class Futbolista extends Persona {
 
     public int getGolesMarcados() {
         return golesMarcados;
+    }
+    
+    @Override
+    public void alimentarse() {
+        System.out.println("\n"+super.getNombre()+"se alimenta de frutas");
     }
     
     @Override

@@ -6,8 +6,8 @@ public class Fisico extends Persona{
     private String tituloUniversitario;
     private int librosLeidos;
 
-    public Fisico(String tituloUniversitario, int librosLeidos, String nombre, String apellido, int edad) {
-        super(nombre, apellido, edad);
+    public Fisico(String tituloUniversitario, int librosLeidos, String nombre, String apellido, int edad, String reino) {
+        super(nombre, apellido, edad, reino);
         this.tituloUniversitario = tituloUniversitario;
         this.librosLeidos = librosLeidos;
     }
@@ -18,6 +18,11 @@ public class Fisico extends Persona{
 
     public int getLibrosLeidos() {
         return librosLeidos;
+    }
+    
+    @Override
+    public void alimentarse() {
+        System.out.println("\n"+super.getNombre()+"se alimenta de cereales");
     }
     
     @Override
